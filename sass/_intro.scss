@@ -11,6 +11,7 @@ section.intro {
   h1 {
     margin-top: 0;
     width: 100%;
+
     line-height: 1.2;
     @include breakpoint(xs) {
       margin-top: 30px;
@@ -63,7 +64,8 @@ section.intro {
 }
 
 .intro-paragraph {
-  max-width: 500px;
+  width: 500px;
+  max-width: 100%;
   padding-left: 80px;
   @include breakpoint(md) {
     padding-left: 50px;
@@ -71,5 +73,6 @@ section.intro {
   @include breakpoint(xs) {
     padding-left: 0;
     max-width: 100%;
+    width: 100%;
   }
 }

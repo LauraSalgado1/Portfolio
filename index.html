@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front-end Developer in Toronto with 5 years' experience. Check out my portfolio and get in touch!"
+    />
+
+    <meta property="og:title" content="Laura Salgado - Front End Developer" />
+    <meta
+      property="og:description"
+      content="Front-end Developer in Toronto with 5 years' experience. Check out my portfolio and get in touch!"
+    />
+    <meta
+      property="og:site_name"
+      content="Laura Salgado - Front End Developer"
+    />
+    <meta
+      property="og:image"
+      content="https://laurasalgado.com/images/Laura-Salgado.jpg"
+    />
+    <meta property="og:url" content="https://laurasalgado.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image:alt"
+      content="Illustration of Laura Salgado sitting on an orange pouf, wearing a Tom Petty shirt and leopard print leggings"
+    />
+
     <title>Laura Salgado - Front End Developer</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -46,23 +71,34 @@
       <section class="intro">
         <div class="intro-wrapper row-of-two one-row">
           <div class="intro-image center-both">
-            <img
-              src="images/Laura-Salgado-Sitting.png"
-              srcset="
-                images/Laura-Salgado-Sitting.webp     600w,
-                images/Laura-Salgado-Sitting.png      600w,
-                images/Laura-Salgado-Sitting-500.webp 500w,
-                images/Laura-Salgado-Sitting-500.png  500w,
-                images/Laura-Salgado-Sitting-400.webp 400w,
-                images/Laura-Salgado-Sitting-400.png  400w,
-                images/Laura-Salgado-Sitting-300.webp 300w,
-                images/Laura-Salgado-Sitting-300.png  300w
-              "
-              sizes="(max-width: 700px) 32vw, 60vw"
-              alt="Illustration of Laura Salgado sitting"
-              width="471"
-              height="575"
-            />
+            <picture class="center-both">
+              <source
+                srcset="
+                  images/Laura-Salgado-Sitting.webp     600w,
+                  images/Laura-Salgado-Sitting-500.webp 500w,
+                  images/Laura-Salgado-Sitting-400.webp 400w,
+                  images/Laura-Salgado-Sitting-300.webp 300w
+                "
+                type="image/webp"
+                sizes="(min-width: 700px) 32vw, 85vw"
+              />
+              <source
+                srcset="
+                  images/Laura-Salgado-Sitting.png     600w,
+                  images/Laura-Salgado-Sitting-500.png 500w,
+                  images/Laura-Salgado-Sitting-400.png 400w,
+                  images/Laura-Salgado-Sitting-300.png 300w
+                "
+                type="image/png"
+                sizes="(min-width: 700px) 32vw, 85vw"
+              />
+              <img
+                src="images/Laura-Salgado-Sitting.png"
+                alt="Illustration of Laura Salgado sitting on an orange pouf, wearing a Tom Petty shirt and leopard print leggings"
+                width="471"
+                height="575"
+              />
+            </picture>
           </div>
           <!-- intro-image -->
 
@@ -599,49 +635,35 @@
         <div class="portfolio-container">
           <div class="portfolio-item one-row row-of-two">
             <div class="portfolio-image celine-dion">
-              <img
-                src="images/celine-dion-home-screenshot-wide.jpg"
-                srcset="
-                  images/celine-dion-home-screenshot-wide.webp     1160w,
-                  images/celine-dion-home-screenshot-wide.jpg      1160w,
-                  images/celine-dion-home-screenshot-wide-580.webp  580w,
-                  images/celine-dion-home-screenshot-wide-580.jpg   580w
-                "
-                sizes="92vw"
-                alt="Screenshot of CelineDion.com homepage"
-                width="639"
-                height="358"
-                loading="lazy"
-                class="mobile-image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/celine-dion-home-screenshot-wide.webp     1160w,
+                    images/celine-dion-home-screenshot-wide-580.webp  580w
+                  "
+                  type="image/webp"
+                  sizes="92vw"
+                />
+                <source
+                  srcset="
+                    images/celine-dion-home-screenshot-wide.jpg     1160w,
+                    images/celine-dion-home-screenshot-wide-580.jpg  580w
+                  "
+                  type="image/jpeg"
+                  sizes="92vw"
+                />
+                <img
+                  src="images/celine-dion-home-screenshot-wide.jpg"
+                  alt="Screenshot of CelineDion.com homepage"
+                  width="639"
+                  height="358"
+                  loading="lazy"
+                  class="mobile-image"
+                />
+              </picture>
             </div>
             <!-- portfolio-image -->
-            <!-- <picture>
-              <source
-                srcset="
-                  images/celine-dion-home-screenshot-wide-580.webp  580w,
-                  images/celine-dion-home-screenshot-wide.webp     1160w
-                "
-                type="image/webp"
-                sizes="85vw"
-              />
-              <source
-                srcset="
-                  images/celine-dion-home-screenshot-wide-580.jpg  580w,
-                  images/celine-dion-home-screenshot-wide.jpg     1160w
-                "
-                type="image/jpeg"
-                sizes="85vw"
-              />
-              <img
-                src="images/celine-dion-home-screenshot.jpg"
-                alt="Screenshot of CelineDion.com homepage"
-                width=""
-                height=""
-                loading="lazy"
-              
-              />
-            </picture> -->
+
             <div class="portfolio-content card">
               <h3>CelineDion.com</h3>
 
@@ -736,64 +758,32 @@
 
           <div class="portfolio-item one-row row-of-two reversed-order">
             <div class="portfolio-image mark-knopfler">
-              <img
-                src="images/mark-knopfler-home-screenshot-wide.jpg"
-                srcset="
-                  images/mark-knopfler-home-screenshot-wide.webp     1160w,
-                  images/mark-knopfler-home-screenshot-wide.jpg      1160w,
-                  images/mark-knopfler-home-screenshot-wide-580.webp  580w,
-                  images/mark-knopfler-home-screenshot-wide-580.jpg   580w
-                "
-                sizes="92vw"
-                alt="Screenshot of MarkKnopfler.com homepage"
-                width="639"
-                height="358"
-                loading="lazy"
-                class="mobile-image"
-              />
-              <!-- <picture>
+              <picture>
                 <source
                   srcset="
-                    images/mark-knopfler-home-screenshot-608.webp  608w,
-                    images/mark-knopfler-home-screenshot.webp     1216w
+                    images/mark-knopfler-home-screenshot-wide.webp     1160w,
+                    images/mark-knopfler-home-screenshot-wide-580.webp  580w
                   "
                   type="image/webp"
-                  media="(min-width: 993px)"
-                  sizes="(min-width: 1020px) 608px, 50vw"
+                  sizes="92vw"
                 />
                 <source
                   srcset="
-                    images/mark-knopfler-home-screenshot-608.jpg  608w,
-                    images/mark-knopfler-home-screenshot.jpg     1216w
+                    images/mark-knopfler-home-screenshot-wide.jpg     1160w,
+                    images/mark-knopfler-home-screenshot-wide-580.jpg  580w
                   "
                   type="image/jpeg"
-                  media="(min-width: 993px)"
-                  sizes="(min-width: 1020px) 608px, 50vw"
-                />
-                <source
-                  srcset="
-                    images/mark-knopfler-home-screenshot-wide-580.webp  580w,
-                    images/mark-knopfler-home-screenshot-wide.webp     1160w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 700px) 580px, 85vw"
-                />
-                <source
-                  srcset="
-                    images/mark-knopfler-home-screenshot-wide-580.jpg  580w,
-                    images/mark-knopfler-home-screenshot-wide.jpg     1160w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 700px) 580px, 85vw"
+                  sizes="92vw"
                 />
                 <img
-                  src="images/mark-knopfler-home-screenshot.jpg"
+                  src="images/mark-knopfler-home-screenshot-wide.jpg"
                   alt="Screenshot of MarkKnopfler.com homepage"
-                  width="608"
-                  height="1087"
+                  width="639"
+                  height="358"
                   loading="lazy"
+                  class="mobile-image"
                 />
-              </picture> -->
+              </picture>
             </div>
             <!-- portfolio-image -->
             <div class="portfolio-content card">
@@ -882,49 +872,7 @@
 
           <div class="portfolio-item one-row row-of-two">
             <div class="portfolio-image animal-movie-generator">
-              <!-- <picture>
-                <source
-                  srcset="
-                    images/mark-knopfler-home-screenshot-608.webp  608w,
-                    images/mark-knopfler-home-screenshot.webp     1216w
-                  "
-                  type="image/webp"
-                  media="(min-width: 993px)"
-                  sizes="(min-width: 1020px) 608px, 50vw"
-                />
-                <source
-                  srcset="
-                    images/mark-knopfler-home-screenshot-608.jpg  608w,
-                    images/mark-knopfler-home-screenshot.jpg     1216w
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 993px)"
-                  sizes="(min-width: 1020px) 608px, 50vw"
-                />
-                <source
-                  srcset="
-                    images/mark-knopfler-home-screenshot-wide-580.webp  580w,
-                    images/mark-knopfler-home-screenshot-wide.webp     1160w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 700px) 580px, 85vw"
-                />
-                <source
-                  srcset="
-                    images/mark-knopfler-home-screenshot-wide-580.jpg  580w,
-                    images/mark-knopfler-home-screenshot-wide.jpg     1160w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 700px) 580px, 85vw"
-                />
-                <img
-                  src="images/mark-knopfler-home-screenshot.jpg"
-                  alt="Screenshot of MarkKnopfler.com homepage"
-                  width="608"
-                  height="1087"
-                  loading="lazy"
-                />
-              </picture> -->
+              <!-- TODO add mobile image here once it's ready -->
             </div>
             <!-- portfolio-image -->
             <div class="portfolio-content card">
@@ -1065,40 +1013,64 @@
             </div>
             <!-- featured-codepen-content -->
             <div class="featured-codepen-image center-both">
-              <img
-                src="images/calla-lillies.jpg"
-                srcset="
-                  images/calla-lillies.webp     924w,
-                  images/calla-lillies.jpg      924w,
-                  images/calla-lillies-462.webp 462w,
-                  images/calla-lillies-462.jpg  462w
-                "
-                sizes="(min-width: 1020px) 462px, (min-width: 700px) 45vw,92vw"
-                alt="Calla Lillies CSS Illustration by Laura Salgado"
-                width="471"
-                height="575"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/calla-lillies.webp     924w,
+                    images/calla-lillies-462.webp 462w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 462px, (min-width: 700px) 45vw,92vw"
+                />
+                <source
+                  srcset="
+                    images/calla-lillies.jpg     924w,
+                    images/calla-lillies-462.jpg 462w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 462px, (min-width: 700px) 45vw,92vw"
+                />
+                <img
+                  src="images/calla-lillies.jpg"
+                  alt="Calla Lillies CSS Illustration by Laura Salgado"
+                  width="471"
+                  height="575"
+                  loading="lazy"
+                />
+              </picture>
             </div>
+            <!-- featured-codepen-image -->
           </div>
           <!-- featured-codepen -->
 
           <ul class="no-list-style all-codepens">
             <li class="single-codepen card">
-              <img
-                src="images/aggretsuko.jpg"
-                srcset="
-                  images/aggretsuko.webp     446w,
-                  images/aggretsuko.jpg      446w,
-                  images/aggretsuko-223.webp 223w,
-                  images/aggretsuko-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Illustration of a cute red panda wearing a suit"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/aggretsuko.webp     446w,
+                    images/aggretsuko-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/aggretsuko.jpg     446w,
+                    images/aggretsuko-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/aggretsuko.jpg"
+                  alt="Illustration of a cute red panda wearing a business suit"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="codepen-content">
                 <h3>Aggretsuko Rage Morph</h3>
                 <p>Created SVG assets in Sketch, GSAP</p>
@@ -1111,20 +1083,31 @@
             </li>
 
             <li class="single-codepen card">
-              <img
-                src="images/charlottes-web-dev.jpg"
-                srcset="
-                  images/charlottes-web-dev.webp     446w,
-                  images/charlottes-web-dev.jpg      446w,
-                  images/charlottes-web-dev-223.webp 223w,
-                  images/charlottes-web-dev-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Spider spelling the word terrific in her web"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/charlottes-web-dev.webp     446w,
+                    images/charlottes-web-dev-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/charlottes-web-dev.jpg     446w,
+                    images/charlottes-web-dev-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/charlottes-web-dev.jpg"
+                  alt="Spider spelling the word terrific in her web"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
               <div class="codepen-content">
                 <h3>Charlotte’s Web Animated Page</h3>
                 <p>Created SVG assets in Sketch, manual SVG animation</p>
@@ -1137,20 +1120,31 @@
             </li>
 
             <li class="single-codepen card">
-              <img
-                src="images/chat-loader.jpg"
-                srcset="
-                  images/chat-loader.webp     446w,
-                  images/chat-loader.jpg      446w,
-                  images/chat-loader-223.webp 223w,
-                  images/chat-loader-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Illustration of two chat speech bubbles"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/chat-loader.webp     446w,
+                    images/chat-loader-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/chat-loader.jpg     446w,
+                    images/chat-loader-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/chat-loader.jpg"
+                  alt="Illustration of two chat speech bubbles"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
               <div class="codepen-content">
                 <h3>Chat Loader Morph</h3>
                 <p>SVG Animation, GSAP, Timelines</p>
@@ -1163,20 +1157,31 @@
             </li>
 
             <li class="single-codepen card">
-              <img
-                src="images/spinning-bowtie-cat.jpg"
-                srcset="
-                  images/spinning-bowtie-cat.webp     446w,
-                  images/spinning-bowtie-cat.jpg      446w,
-                  images/spinning-bowtie-cat-223.webp 223w,
-                  images/spinning-bowtie-cat-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Illustration of a tabby cat wearing a bow tie"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/spinning-bowtie-cat.webp     446w,
+                    images/spinning-bowtie-cat-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/spinning-bowtie-cat.jpg     446w,
+                    images/spinning-bowtie-cat-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/spinning-bowtie-cat.jpg"
+                  alt="Illustration of a tabby cat wearing a bow tie"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
               <div class="codepen-content">
                 <h3>Spinning Bowtie Cat</h3>
                 <p>SVG Animation, GSAP, TweenMax</p>
@@ -1189,20 +1194,31 @@
             </li>
 
             <li class="single-codepen card">
-              <img
-                src="images/MC-Escher-cat.jpg"
-                srcset="
-                  images/MC-Escher-cat.webp     446w,
-                  images/MC-Escher-cat.jpg      446w,
-                  images/MC-Escher-cat-223.webp 223w,
-                  images/MC-Escher-cat-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Illustration of a white cat sitting on a striped tablecloth"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/MC-Escher-cat.webp     446w,
+                    images/MC-Escher-cat-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/MC-Escher-cat.jpg     446w,
+                    images/MC-Escher-cat-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/MC-Escher-cat.jpg"
+                  alt="Illustration of a white cat sitting on a striped tablecloth"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
               <div class="codepen-content">
                 <h3>MC Escher Woodblock Cat</h3>
                 <p>Pure CSS illustration</p>
@@ -1215,20 +1231,32 @@
             </li>
 
             <li class="single-codepen card">
-              <img
-                src="images/rain-machine.jpg"
-                srcset="
-                  images/rain-machine.webp     446w,
-                  images/rain-machine.jpg      446w,
-                  images/rain-machine-223.webp 223w,
-                  images/rain-machine-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Illustration of a lightning storm with control buttons"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/rain-machine.webp     446w,
+                    images/rain-machine-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/rain-machine.jpg     446w,
+                    images/rain-machine-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/MC-Escher-cat.jpg"
+                  alt="Illustration of a lightning storm with control buttons"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="codepen-content">
                 <h3>Rain Machine</h3>
                 <p>Manual SVG animation, interactive</p>
@@ -1241,20 +1269,32 @@
             </li>
 
             <li class="single-codepen card">
-              <img
-                src="images/purring-cat.jpg"
-                srcset="
-                  images/purring-cat.webp     446w,
-                  images/purring-cat.jpg      446w,
-                  images/purring-cat-223.webp 223w,
-                  images/purring-cat-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Illustration of a smiling cat"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/purring-cat.webp     446w,
+                    images/purring-cat-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/purring-cat.jpg     446w,
+                    images/purring-cat-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/purring-cat.jpg"
+                  alt="Illustration of a smiling cat"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="codepen-content">
                 <h3>Purring Cat</h3>
                 <p>Manual SVG animation</p>
@@ -1267,20 +1307,32 @@
             </li>
 
             <li class="single-codepen card">
-              <img
-                src="images/self-portrait.jpg"
-                srcset="
-                  images/self-portrait.webp     446w,
-                  images/self-portrait.jpg      446w,
-                  images/self-portrait-223.webp 223w,
-                  images/self-portrait-223.jpg  223w
-                "
-                sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                alt="Illustration of Laura Salgado head and shoulders"
-                width="223"
-                height="223"
-                loading="lazy"
-              />
+              <picture class="center-both">
+                <source
+                  srcset="
+                    images/self-portrait.webp     446w,
+                    images/self-portrait-223.webp 223w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <source
+                  srcset="
+                    images/self-portrait.jpg     446w,
+                    images/self-portrait-223.jpg 223w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                />
+                <img
+                  src="images/self-portrait.jpg"
+                  alt="Illustration of Laura Salgado head and shoulders"
+                  width="223"
+                  height="223"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="codepen-content">
                 <h3>Self Portrait</h3>
                 <p>Manually animated pure CSS illustration</p>
@@ -1466,20 +1518,31 @@
             </div>
             <!-- contact-content -->
             <div class="contact-image">
-              <img
-                src="images/Laura-Salgado-standing.png"
-                srcset="
-                  images/Laura-Salgado-standing.webp     924w,
-                  images/Laura-Salgado-standing.png      924w,
-                  images/Laura-Salgado-standing-462.webp 462w,
-                  images/Laura-Salgado-standing-462.png  462w
-                "
-                sizes="(min-width: 1020px) 462px, (min-width: 700px) 44vw, 60vw"
-                alt="Laura Salgado"
-                width="462"
-                height="693"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/Laura-Salgado-standing.webp     924w,
+                    images/Laura-Salgado-standing-462.webp 462w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1020px) 462px, (min-width: 700px) 44vw, 60vw"
+                />
+                <source
+                  srcset="
+                    images/Laura-Salgado-standing.png     924w,
+                    images/Laura-Salgado-standing-462.png 462w
+                  "
+                  type="image/png"
+                  sizes="(min-width: 1020px) 462px, (min-width: 700px) 44vw, 60vw"
+                />
+                <img
+                  src="images/Laura-Salgado-standing.png"
+                  alt="Photo headshot of Laura Salgado"
+                  width="462"
+                  height="693"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <!-- contact-image -->
           </div>

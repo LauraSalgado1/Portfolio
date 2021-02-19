@@ -14,12 +14,18 @@ h1 {
     @media (max-width: 767px) {
       font-size: 3rem;
     }
+    @include breakpoint(xxs) {
+      font-size: 2.4rem;
+    }
   }
   @include breakpoint(sm) {
     font-size: 4.6rem;
   }
   @include breakpoint(xs) {
     font-size: 4rem;
+  }
+  @include breakpoint(xxs) {
+    font-size: 3.6rem;
   }
 }
 

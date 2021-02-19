@@ -1,9 +1,18 @@
-// animated svg icons
-.background {
-  background: linear-gradient(-45deg, #9b271a, #f09810, #9b271a, #401520);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  background-position: 0% 50%;
+//don't show animated icons in IE
+@supports (display: grid) {
+  // animated svg icons
+  .background {
+    background: linear-gradient(-45deg, #9b271a, #f09810, #9b271a, #401520);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-position: 0% 50%;
+  }
+  @media (prefers-reduced-motion) {
+    .background {
+      animation: none;
+      background-position: 60% 40%;
+    }
+  }
 }
 
 .bg-html5 {
@@ -11,7 +20,6 @@
   clip-path: url(#clip-html5);
   width: 114px;
   height: 152px;
-  animation: gradient 15s ease infinite;
   @include breakpoint(sm) {
     width: 108px;
     height: 144px;
@@ -28,7 +36,6 @@
   width: 114px;
   height: 152px;
   animation-delay: 500ms;
-  animation: gradient 15s ease infinite;
   @include breakpoint(sm) {
     width: 108px;
     height: 144px;

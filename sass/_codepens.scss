@@ -61,13 +61,33 @@ section.codepens {
   }
 }
 
+// ie fallback
 .all-codepens {
-  display: grid;
-  grid-gap: 15px;
-  row-gap: 15px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  @include breakpoint(xs) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  > li {
+    flex-basis: calc(100% / 4);
+    * {
+      //ie
+      max-width: 100%;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+@supports (display: grid) {
+  .all-codepens {
+    display: grid;
+    grid-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    @include breakpoint(xs) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    > li {
+      flex: 1;
+    }
   }
 }
 

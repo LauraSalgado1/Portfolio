@@ -127,6 +127,10 @@
   justify-content: center;
   align-items: flex-start;
   padding: 40px 10% 40px 0;
+  // ie
+  p {
+    max-width: 100%;
+  }
   @include breakpoint(xs) {
     padding: 0 20px;
     display: block;
