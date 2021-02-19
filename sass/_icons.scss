@@ -1,0 +1,215 @@
+// animated svg icons
+.background {
+  background: linear-gradient(-45deg, #9b271a, #f09810, #9b271a, #401520);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-position: 0% 50%;
+}
+
+.bg-html5 {
+  -webkit-clip-path: url(#clip-html5);
+  clip-path: url(#clip-html5);
+  width: 114px;
+  height: 152px;
+  animation: gradient 15s ease infinite;
+  @include breakpoint(sm) {
+    width: 108px;
+    height: 144px;
+  }
+  @include breakpoint(xs) {
+    width: 100px;
+    height: 132px;
+  }
+}
+
+.bg-css3 {
+  -webkit-clip-path: url(#clip-css3);
+  clip-path: url(#clip-css3);
+  width: 114px;
+  height: 152px;
+  animation-delay: 500ms;
+  animation: gradient 15s ease infinite;
+  @include breakpoint(sm) {
+    width: 108px;
+    height: 144px;
+  }
+  @include breakpoint(xs) {
+    width: 100px;
+    height: 132px;
+  }
+}
+
+.bg-js {
+  -webkit-clip-path: url(#clip-js);
+  clip-path: url(#clip-js);
+  width: 132px;
+  height: 152px;
+  animation-delay: 1000ms;
+  @include breakpoint(sm) {
+    width: 125px;
+    height: 144px;
+  }
+  @include breakpoint(xs) {
+    width: 100px;
+    height: 115px;
+  }
+}
+
+.bg-php {
+  -webkit-clip-path: url(#clip-php);
+  clip-path: url(#clip-php);
+  width: 180px;
+  height: 180px;
+  animation-delay: 1500ms;
+  @include breakpoint(sm) {
+    width: 144px;
+    height: 144px;
+  }
+  @include breakpoint(xs) {
+    width: 145px;
+    height: 145px;
+  }
+  @media (max-width: 400px) {
+    width: 131px;
+    height: 131px;
+  }
+  @include breakpoint(xxs) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.bg-gh {
+  -webkit-clip-path: url(#clip-gh);
+  clip-path: url(#clip-gh);
+  width: 64px;
+  height: 66px;
+  @include breakpoint(xs) {
+    width: 35px;
+    height: 36px;
+  }
+}
+
+.bg-gu {
+  -webkit-clip-path: url(#clip-gu);
+  clip-path: url(#clip-gu);
+  width: 69px;
+  height: 69px;
+  animation-delay: 500ms;
+  @include breakpoint(xs) {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.bg-ba {
+  -webkit-clip-path: url(#clip-ba);
+  clip-path: url(#clip-ba);
+  width: 44px;
+  height: 60px;
+  animation-delay: 1500ms;
+  @include breakpoint(xs) {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.bg-ad {
+  -webkit-clip-path: url(#clip-ad);
+  clip-path: url(#clip-ad);
+  width: 60px;
+  height: 60px;
+  animation-delay: 2000ms;
+  @include breakpoint(xs) {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.bg-sk {
+  -webkit-clip-path: url(#clip-sk);
+  clip-path: url(#clip-sk);
+  width: 66px;
+  height: 66px;
+  animation-delay: 2500ms;
+  @include breakpoint(xs) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.bg-ac {
+  -webkit-clip-path: url(#clip-ac);
+  clip-path: url(#clip-ac);
+  width: 160px;
+  height: 160px;
+  @include breakpoint(xs) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.bg-re {
+  -webkit-clip-path: url(#clip-re);
+  clip-path: url(#clip-re);
+  width: 160px;
+  height: 160px;
+  @include breakpoint(xs) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.bg-wp-round {
+  -webkit-clip-path: url(#clip-wp-round);
+  clip-path: url(#clip-wp-round);
+  width: 35px;
+  height: 35px;
+}
+
+.bg-magic {
+  -webkit-clip-path: url(#clip-magic);
+  clip-path: url(#clip-magic);
+  width: 25px;
+  height: 25px;
+}
+
+.bg-design {
+  -webkit-clip-path: url(#clip-design);
+  clip-path: url(#clip-design);
+  width: 30px;
+  height: 30px;
+}
+
+.bg-js-small {
+  -webkit-clip-path: url(#clip-js-small);
+  clip-path: url(#clip-js-small);
+  width: 32px;
+  height: 36px;
+}
+
+.bg-api {
+  -webkit-clip-path: url(#clip-api);
+  clip-path: url(#clip-api);
+  width: 33px;
+  height: 30px;
+}
+
+.bg-pb {
+  -webkit-clip-path: url(#clip-pb);
+  clip-path: url(#clip-pb);
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

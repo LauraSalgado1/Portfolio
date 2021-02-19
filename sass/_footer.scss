@@ -1,0 +1,12 @@
+footer.site-footer {
+  background: $background-black;
+  color: $white;
+  padding: 15px 30px;
+  p {
+    margin: 3px 0;
+    font-size: 1.1rem;
+  }
+  a {
+    color: $white;
+  }
+}

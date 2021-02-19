@@ -1,0 +1,126 @@
+.portfolio-container {
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  @include breakpoint(xs) {
+    padding: 0 30px;
+  }
+  @include breakpoint(xxs) {
+    padding: 0 15px;
+  }
+}
+
+.portfolio-item {
+  grid-gap: 0;
+  &:not(:last-of-type) {
+    @include breakpoint(xs) {
+      margin-bottom: 15px;
+    }
+  }
+  h3 {
+    margin: 0 0 30px 0;
+    text-align: left;
+    @include breakpoint(sm) {
+      margin: 0 0 20px 0;
+    }
+    @include breakpoint(xs) {
+      text-align: center;
+    }
+  }
+  ul {
+    margin: 0 auto 50px;
+    grid-template-columns: repeat(2, minmax(0, 100px));
+    @include breakpoint(sm) {
+      margin: 0 auto 40px;
+    }
+    @include breakpoint(xs) {
+      margin: 0 auto 30px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  li {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .button {
+    @include breakpoint(xs) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  .button-style {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include breakpoint(sm) {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+  }
+  .logo-container {
+    min-height: 55px;
+  }
+}
+
+.portfolio-image {
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: relative;
+  &.celine-dion {
+    background-image: url(images/celine-dion-home-screenshot.jpg);
+    @include breakpoint(xs) {
+      background-image: none;
+    }
+  }
+  &.mark-knopfler {
+    background-image: url(images/mark-knopfler-home-screenshot.jpg);
+    @include breakpoint(xs) {
+      background-image: none;
+    }
+  }
+  &.animal-movie-generator {
+    background-image: url(images/animal-movie-generator-screenshot.png);
+    @include breakpoint(xs) {
+      background-image: none;
+    }
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    @include breakpoint(xs) {
+      display: none;
+    }
+  }
+  .mobile-image {
+    display: none;
+    @include breakpoint(xs) {
+      display: block;
+    }
+  }
+}
+
+.portfolio-content {
+  padding: 11%;
+  @include breakpoint(md) {
+    padding: 8%;
+  }
+  @include breakpoint(sm) {
+    padding: 40px 30px;
+  }
+  @include breakpoint(xs) {
+    padding: 30px 20px;
+  }
+}

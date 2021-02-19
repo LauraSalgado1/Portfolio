@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  // height is part of 'stick footer to bottom'
+  height: 100%;
+}
+
+body {
+  // start of 'stick footer to bottom'
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $background-white;
+  color: $black;
+  .footer-to-bottom {
+    flex: 1 0 auto;
+  }
+  .site-footer {
+    flex-shrink: 0;
+  }
+  // end of 'stick footer to bottom'
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+img,
+iframe,
+svg {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+img {
+  height: auto !important;
+  width: auto;
+  display: block;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: $black;
+}
+
+a {
+  text-decoration: underline;
+  transition: text-decoration-color 0.3s ease;
+  &:hover {
+    text-decoration-color: transparent;
+  }
+  &:focus {
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+}
+
+section:not(.intro) {
+  display: block;
+  padding: 70px 0 0;
+  scroll-margin-top: 42px;
+  @include breakpoint(xs) {
+    padding: 30px 0 0;
+  }
+}
+
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  @include breakpoint(xxs) {
+    padding: 0 15px;
+  }
+}
+
+.no-list-style {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.button-style {
+  display: inline-block;
+  padding: 5px 28px;
+  background: $background-black;
+  color: $white;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  border: 2px solid $background-black;
+  @include breakpoint(sm) {
+    font-size: 1.2rem;
+  }
+  &:visited,
+  &:active {
+    color: $white;
+  }
+  &:hover,
+  &:focus {
+    color: $background-black;
+    background: $white;
+  }
+}
+
+.card {
+  background: $white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.center-both,
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.button {
+  @include breakpoint(xs) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}

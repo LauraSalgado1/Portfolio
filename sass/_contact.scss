@@ -1,0 +1,93 @@
+section.contact {
+  background: $background-yellow;
+  padding-bottom: 0;
+  img {
+    display: block;
+  }
+  a {
+    width: 80px;
+    text-decoration-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    @include breakpoint(xs) {
+      width: 100%;
+    }
+    &:hover,
+    &:focus {
+      text-decoration-color: $black;
+      .black {
+        opacity: 0;
+      }
+    }
+  }
+  .black {
+    transition: opacity 0.3s ease;
+  }
+  .contact-svg-box {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    @include breakpoint(sm) {
+      width: 40px;
+      height: 40px;
+    }
+    svg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      &.black {
+        fill: $black;
+      }
+      @include breakpoint(sm) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  ul {
+    margin-top: 100px;
+    @include breakpoint(sm) {
+      margin-top: 50px;
+    }
+    @include breakpoint(xs) {
+      margin-top: 30px;
+    }
+  }
+  .email {
+    font-size: 1.8rem;
+    font-weight: 600;
+    @include breakpoint(xs) {
+      text-align: center;
+    }
+  }
+}
+
+.contact-row {
+  @include breakpoint(xs) {
+    grid-column: 1;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact-image {
+  @include breakpoint(xs) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    @include breakpoint(xs) {
+      width: 70%;
+    }
+  }
+}

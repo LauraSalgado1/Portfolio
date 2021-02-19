@@ -1,0 +1,116 @@
+section.codepens {
+  padding-bottom: 90px;
+  @include breakpoint(xs) {
+    padding-bottom: 50px;
+  }
+}
+
+.featured-codepen {
+  margin-bottom: 15px;
+  @include breakpoint(xs) {
+    margin-bottom: 30px;
+    grid-gap: 0;
+  }
+}
+
+.featured-codepen-content {
+  padding: 30px;
+  @include breakpoint(xs) {
+    padding: 30px 20px;
+  }
+  h3 {
+    margin-top: 0;
+    @include breakpoint(xs) {
+      text-align: center;
+    }
+  }
+  ul {
+    margin: 40px auto 60px;
+    @include breakpoint(sm) {
+      margin: 0 auto 40px;
+    }
+    @include breakpoint(sm) {
+      margin: 0 auto 30px;
+    }
+  }
+  li {
+    width: 105px;
+    text-align: center;
+    font-weight: 600;
+    @include breakpoint(xs) {
+      width: 100%;
+    }
+  }
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  .button-style {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include breakpoint(sm) {
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.featured-codepen-image {
+  background: #221b11;
+  @include breakpoint(xs) {
+    order: -1;
+  }
+}
+
+.all-codepens {
+  display: grid;
+  grid-gap: 15px;
+  row-gap: 15px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  @include breakpoint(xs) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.single-codepen {
+  display: flex;
+  flex-direction: column;
+}
+
+.codepen-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+  @include breakpoint(sm) {
+    padding: 10px 10px 15px;
+  }
+  h3 {
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+    @include breakpoint(sm) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint(xs) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  p {
+    margin-top: 0;
+    font-size: 1.4rem;
+    @include breakpoint(sm) {
+      font-size: 1.2rem;
+    }
+  }
+  .button-style {
+    @include breakpoint(sm) {
+      padding: 7px 20px;
+    }
+    @include breakpoint(xxs) {
+      padding: 7px 0px;
+      width: 100%;
+    }
+  }
+}

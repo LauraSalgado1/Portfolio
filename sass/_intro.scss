@@ -1,0 +1,75 @@
+section.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $background-yellow;
+  min-height: 100vh;
+  max-height: 1100px;
+  @include breakpoint(xs) {
+    max-height: inherit;
+  }
+  h1 {
+    margin-top: 0;
+    width: 100%;
+    line-height: 1.2;
+    @include breakpoint(xs) {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  img {
+    max-height: 40vw;
+    @include breakpoint(xs) {
+      max-height: inherit;
+      width: 70%;
+    }
+  }
+}
+
+.intro-wrapper {
+  padding: 80px 35px 40px;
+  margin: 0 auto;
+  @include breakpoint(xl) {
+    width: 80%;
+  }
+  @include breakpoint(sm) {
+    grid-template-columns: 2fr 3fr;
+  }
+  @include breakpoint(xs) {
+    grid-column: 1;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 35px 35px;
+  }
+  p {
+    font-size: 1.8rem;
+    @include breakpoint(xs) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 10%;
+  @include breakpoint(xs) {
+    padding-right: 0;
+  }
+}
+
+.intro-paragraph {
+  max-width: 500px;
+  padding-left: 80px;
+  @include breakpoint(md) {
+    padding-left: 50px;
+  }
+  @include breakpoint(xs) {
+    padding-left: 0;
+    max-width: 100%;
+  }
+}

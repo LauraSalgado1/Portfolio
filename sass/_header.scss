@@ -1,0 +1,116 @@
+header.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include breakpoint(xs) {
+    padding: 5px 15px;
+  }
+  &.headroom {
+    will-change: background, padding;
+    transition: background 0.2s ease-out, padding 0.2s ease-out;
+  }
+  &.headroom--top {
+    background: transparent;
+  }
+  &.headroom--not-top {
+    background: $white;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
+    padding: 5px 30px;
+    @include breakpoint(xs) {
+      padding: 5px 15px;
+    }
+    a {
+      color: $black;
+      transition: color 0.2s ease-out text-decoration-color 0.2s ease;
+      &:active,
+      &:focus,
+      &:visited {
+        color: $black;
+      }
+      &:hover {
+        text-decoration-color: $black;
+      }
+    }
+    .logo {
+      .first-name,
+      .last-name {
+        transition: transform 0.2s ease, color 0.8s ease;
+        transform: translateX(-3px) scaleX(1);
+        color: $black;
+      }
+      .letter-s {
+        transform: translateX(0px);
+      }
+    }
+  }
+  .logo {
+    line-height: 1;
+    color: $black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    @include breakpoint(xs) {
+      font-size: 1.4rem;
+    }
+    .first-name,
+    .last-name {
+      display: inline-block;
+      will-change: transform;
+      transition: transform 0.4s ease;
+      color: transparent;
+    }
+    .first-name {
+      transform: translateX(-26px) scaleX(0.6);
+    }
+    .last-name {
+      transform: translateX(-35px) scaleX(0.6);
+    }
+    .letter-s {
+      will-change: transform;
+      transition: transform 0.4s ease;
+      transform: translateX(10px);
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+      padding: 5px;
+      text-transform: uppercase;
+      text-decoration-color: transparent;
+      font-size: 1.3rem;
+      display: inline-block;
+      color: $black;
+      font-weight: bold;
+      @include breakpoint(xs) {
+        font-size: 1.2rem;
+      }
+      &:active,
+      &:focus,
+      &:visited {
+        color: $black;
+      }
+      &:hover {
+        text-decoration-color: $black;
+      }
+    }
+    li {
+      margin: 5px 10px;
+      @include breakpoint(xs) {
+        margin: 5px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
