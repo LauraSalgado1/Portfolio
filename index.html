@@ -32,10 +32,15 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <header class="site-header" id="siteHeader">
@@ -735,8 +740,14 @@
                 and navigation menu transitions.
               </p>
               <p>
-                Check out the <a href="" target="_blank">CodePen</a> I used to
-                workshop my scrolling animations.
+                Check out the
+                <a
+                  href="https://codepen.io/Laura_Salgado/pen/5584324389d4380d4e4ef3a0274eed85"
+                  target="_blank"
+                  rel="noreferrer"
+                  >CodePen</a
+                >
+                I used to workshop my scrolling animations.
               </p>
               <p>
                 I coded most of the custom WordPress theme, which also includes
@@ -748,7 +759,13 @@
                 for me.
               </p>
               <div class="button">
-                <a href="" class="button-style">View Live</a>
+                <a
+                  href="https://www.celinedion.com/"
+                  class="button-style"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View Live</a
+                >
               </div>
               <!-- button -->
             </div>
@@ -862,7 +879,13 @@
                 Store.
               </p>
               <div class="button">
-                <a href="" class="button-style">View Live</a>
+                <a
+                  href="https://www.markknopfler.com/"
+                  class="button-style"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View Live</a
+                >
               </div>
               <!-- button -->
             </div>
@@ -872,7 +895,32 @@
 
           <div class="portfolio-item one-row row-of-two">
             <div class="portfolio-image animal-movie-generator">
-              <!-- TODO add mobile image here once it's ready -->
+              <picture>
+                <source
+                  srcset="
+                    images/animal-movie-generator-screenshot-wide.webp     1160w,
+                    images/animal-movie-generator-screenshot-wide-580.webp  580w
+                  "
+                  type="image/webp"
+                  sizes="92vw"
+                />
+                <source
+                  srcset="
+                    images/animal-movie-generator-screenshot-wide.jpg     1160w,
+                    images/animal-movie-generator-screenshot-wide-580.jpg  580w
+                  "
+                  type="image/jpeg"
+                  sizes="92vw"
+                />
+                <img
+                  src="images/animal-movie-generator-screenshot-wide.jpg"
+                  alt="Screenshot of Animal Movie Generator showing film results starring The Lion, Movie Posters for The Lion King and others"
+                  width="639"
+                  height="358"
+                  loading="lazy"
+                  class="mobile-image"
+                />
+              </picture>
             </div>
             <!-- portfolio-image -->
             <div class="portfolio-content card">
@@ -942,10 +990,12 @@
               </p>
               <p>Now you can find movies starring your favourite animal!</p>
               <p>
-                I enjoyed adding fun surprises on the dynamic background images.
+                I enjoyed adding fun surprises on the dynamic film perforations.
               </p>
               <div class="button">
-                <a class="button-style" href="">Give It A Whirl</a>
+                <a class="button-style" href="" target="_blank" rel="noreferrer"
+                  >Give It A Whirl</a
+                >
               </div>
               <!-- button -->
             </div>
@@ -1003,16 +1053,31 @@
                 <a
                   href="https://blog.codepen.io/2017/06/13/134-nat-cooper/"
                   target="_blank"
+                  rel="noreferrer"
                   >episode 134 of CodePen Radio</a
                 >.
               </p>
               <div class="button">
-                <a href="" target="_blank" class="button-style">View CodePen</a>
+                <a
+                  href="https://codepen.io/Laura_Salgado/pen/bWKNLm"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="button-style"
+                  >View CodePen</a
+                >
               </div>
               <!-- button -->
             </div>
             <!-- featured-codepen-content -->
-            <div class="featured-codepen-image center-both">
+            <a
+              class="featured-codepen-image center-both codepen-link"
+              href="https://codepen.io/Laura_Salgado/pen/bWKNLm"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="screen-reader-text"
+                >View Calla Lillies on CodePen</span
+              >
               <picture class="center-both">
                 <source
                   srcset="
@@ -1038,309 +1103,349 @@
                   loading="lazy"
                 />
               </picture>
-            </div>
+            </a>
             <!-- featured-codepen-image -->
           </div>
           <!-- featured-codepen -->
 
           <ul class="no-list-style all-codepens">
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/aggretsuko.webp     446w,
-                    images/aggretsuko-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/aggretsuko.jpg     446w,
-                    images/aggretsuko-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/aggretsuko.jpg"
-                  alt="Illustration of a cute red panda wearing a business suit"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/VxWvZG"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View Aggretsuko Rage Morph on CodePen</span
+                >
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/aggretsuko.webp     446w,
+                      images/aggretsuko-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/aggretsuko.jpg     446w,
+                      images/aggretsuko-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/aggretsuko.jpg"
+                    alt="Illustration of a cute red panda wearing a business suit"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
 
               <div class="codepen-content">
                 <h3>Aggretsuko Rage Morph</h3>
                 <p>Created SVG assets in Sketch, GSAP</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
 
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/charlottes-web-dev.webp     446w,
-                    images/charlottes-web-dev-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/charlottes-web-dev.jpg     446w,
-                    images/charlottes-web-dev-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/charlottes-web-dev.jpg"
-                  alt="Spider spelling the word terrific in her web"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/GyNVWQ"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View Charlotte's Web Animated Page on CodePen</span
+                >
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/charlottes-web-dev.webp     446w,
+                      images/charlottes-web-dev-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/charlottes-web-dev.jpg     446w,
+                      images/charlottes-web-dev-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/charlottes-web-dev.jpg"
+                    alt="Spider spelling the word terrific in her web"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
               <div class="codepen-content">
                 <h3>Charlotte’s Web Animated Page</h3>
                 <p>Created SVG assets in Sketch, manual SVG animation</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
 
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/chat-loader.webp     446w,
-                    images/chat-loader-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/chat-loader.jpg     446w,
-                    images/chat-loader-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/chat-loader.jpg"
-                  alt="Illustration of two chat speech bubbles"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/KqMJBw"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View Chat Loader Morph on CodePen</span
+                >
+
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/chat-loader.webp     446w,
+                      images/chat-loader-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/chat-loader.jpg     446w,
+                      images/chat-loader-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/chat-loader.jpg"
+                    alt="Illustration of two chat speech bubbles"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
               <div class="codepen-content">
                 <h3>Chat Loader Morph</h3>
                 <p>SVG Animation, GSAP, Timelines</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
 
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/spinning-bowtie-cat.webp     446w,
-                    images/spinning-bowtie-cat-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/spinning-bowtie-cat.jpg     446w,
-                    images/spinning-bowtie-cat-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/spinning-bowtie-cat.jpg"
-                  alt="Illustration of a tabby cat wearing a bow tie"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/dRZQNw"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View Spinning Bowtie Cat on CodePen</span
+                >
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/spinning-bowtie-cat.webp     446w,
+                      images/spinning-bowtie-cat-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/spinning-bowtie-cat.jpg     446w,
+                      images/spinning-bowtie-cat-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/spinning-bowtie-cat.jpg"
+                    alt="Illustration of a tabby cat wearing a bow tie"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
               <div class="codepen-content">
                 <h3>Spinning Bowtie Cat</h3>
                 <p>SVG Animation, GSAP, TweenMax</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
 
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/MC-Escher-cat.webp     446w,
-                    images/MC-Escher-cat-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/MC-Escher-cat.jpg     446w,
-                    images/MC-Escher-cat-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/MC-Escher-cat.jpg"
-                  alt="Illustration of a white cat sitting on a striped tablecloth"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/aVXyrz"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View MC Escher Woodblock Cat on CodePen</span
+                >
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/MC-Escher-cat.webp     446w,
+                      images/MC-Escher-cat-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/MC-Escher-cat.jpg     446w,
+                      images/MC-Escher-cat-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/MC-Escher-cat.jpg"
+                    alt="Illustration of a white cat sitting on a striped tablecloth"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
               <div class="codepen-content">
                 <h3>MC Escher Woodblock Cat</h3>
                 <p>Pure CSS illustration</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
 
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/rain-machine.webp     446w,
-                    images/rain-machine-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/rain-machine.jpg     446w,
-                    images/rain-machine-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/MC-Escher-cat.jpg"
-                  alt="Illustration of a lightning storm with control buttons"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/peZzOG"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View Rain Machine on CodePen</span
+                >
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/rain-machine.webp     446w,
+                      images/rain-machine-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/rain-machine.jpg     446w,
+                      images/rain-machine-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/rain-machine.jpg"
+                    alt="Illustration of a lightning storm with control buttons"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
 
               <div class="codepen-content">
                 <h3>Rain Machine</h3>
                 <p>Manual SVG animation, interactive</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
 
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/purring-cat.webp     446w,
-                    images/purring-cat-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/purring-cat.jpg     446w,
-                    images/purring-cat-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/purring-cat.jpg"
-                  alt="Illustration of a smiling cat"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/EWrZer"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View Purring Cat on CodePen</span
+                >
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/purring-cat.webp     446w,
+                      images/purring-cat-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/purring-cat.jpg     446w,
+                      images/purring-cat-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/purring-cat.jpg"
+                    alt="Illustration of a smiling cat"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
 
               <div class="codepen-content">
                 <h3>Purring Cat</h3>
                 <p>Manual SVG animation</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
 
             <li class="single-codepen card">
-              <picture class="center-both">
-                <source
-                  srcset="
-                    images/self-portrait.webp     446w,
-                    images/self-portrait-223.webp 223w
-                  "
-                  type="image/webp"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <source
-                  srcset="
-                    images/self-portrait.jpg     446w,
-                    images/self-portrait-223.jpg 223w
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
-                />
-                <img
-                  src="images/self-portrait.jpg"
-                  alt="Illustration of Laura Salgado head and shoulders"
-                  width="223"
-                  height="223"
-                  loading="lazy"
-                />
-              </picture>
-
+              <a
+                href="https://codepen.io/Laura_Salgado/pen/RZKQGy"
+                target="_blank"
+                class="codepen-link"
+                rel="noreferrer"
+              >
+                <span class="screen-reader-text"
+                  >View Self Portrait on CodePen</span
+                >
+                <picture class="center-both">
+                  <source
+                    srcset="
+                      images/self-portrait.webp     446w,
+                      images/self-portrait-223.webp 223w
+                    "
+                    type="image/webp"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <source
+                    srcset="
+                      images/self-portrait.jpg     446w,
+                      images/self-portrait-223.jpg 223w
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 1020px) 223px, (min-width: 700px) 23vw, 44vw"
+                  />
+                  <img
+                    src="images/self-portrait.jpg"
+                    alt="Illustration of Laura Salgado head and shoulders"
+                    width="223"
+                    height="223"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
               <div class="codepen-content">
                 <h3>Self Portrait</h3>
                 <p>Manually animated pure CSS illustration</p>
-                <div class="button">
-                  <a class="button-style" href="" target="_blank"
-                    >View CodePen</a
-                  >
-                </div>
               </div>
             </li>
           </ul>
@@ -1357,9 +1462,12 @@
               <h2>Please Contact</h2>
               <p class="email">culham.laura@gmail.com</p>
               <p>
-                I'm accustomed to tight deadlines and the highest standards. My
-                dream role would be on a team that encourages big challenges and
-                promotes ongoing learning.
+                I'm accustomed to tight deadlines and the
+                highest&nbsp;standards.
+              </p>
+              <p>
+                My dream role would be on a team that encourages big challenges
+                and promotes ongoing&nbsp;learning.
               </p>
 
               <ul class="no-list-style one-row row-of-three">
@@ -1466,7 +1574,10 @@
                 </li>
 
                 <li>
-                  <a href="" class="center-both link-3">
+                  <a
+                    href="https://codepen.io/Laura_Salgado"
+                    class="center-both link-3"
+                  >
                     <div class="contact-svg-box">
                       <svg
                         aria-hidden="true"
@@ -1554,7 +1665,10 @@
     <footer class="site-footer" id="footer">
       <p>Design and development by me</p>
       <p>
-        <a href="https://iconscout.com/icon/php-76#" target="_blank"
+        <a
+          href="https://iconscout.com/icon/php-76#"
+          target="_blank"
+          rel="noreferrer"
           >PHP Icon</a
         >
         by Icons8 on Iconscout
