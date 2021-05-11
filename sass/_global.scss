@@ -86,7 +86,7 @@ section:not(.intro) {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
-  @include breakpoint(xxs) {
+  @include breakpoint(xs) {
     padding: 0 15px;
   }
 }
@@ -99,27 +99,24 @@ section:not(.intro) {
 
 .button-style {
   display: inline-block;
-  padding: 5px 28px;
-  background: $background-black;
+  padding: 8px 32px;
+  background: $black;
   color: $white;
   line-height: 1;
   text-decoration: none;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-radius: 5px;
   transition: all 0.2s ease;
   font-weight: bold;
-  border: 2px solid $background-black;
-  @include breakpoint(sm) {
-    font-size: 1.2rem;
-  }
+  border: 2px solid $black;
   &:visited,
   &:active {
     color: $white;
   }
   &:hover,
   &:focus {
-    color: $background-black;
+    color: $black;
     background: $white;
   }
 }

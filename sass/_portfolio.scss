@@ -3,9 +3,6 @@
   max-width: 100%;
   margin: 0 auto;
   @include breakpoint(xs) {
-    padding: 0 30px;
-  }
-  @include breakpoint(xxs) {
     padding: 0 15px;
   }
 }

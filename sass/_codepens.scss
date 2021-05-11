@@ -56,6 +56,9 @@ section.codepens {
 
 .codepen-link {
   position: relative;
+  &:focus {
+    outline-color: $background-yellow;
+  }
   &::after {
     padding: 30px;
     display: flex;
@@ -75,8 +78,7 @@ section.codepens {
     transition: opacity 0.3s ease;
     font-size: 1.8rem;
   }
-  &:hover,
-  &:focus {
+  &:hover {
     &::after {
       opacity: 1;
     }
@@ -90,7 +92,6 @@ section.codepens {
   }
   &::after {
     font-size: 2.6rem;
-    //background: rgba(0, 0, 0, 0.4);
     @include breakpoint(xs) {
       font-size: 2.4rem;
     }
@@ -136,7 +137,7 @@ section.codepens {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-grow: 1;
   @include breakpoint(sm) {
@@ -157,8 +158,5 @@ section.codepens {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.4rem;
-    @include breakpoint(sm) {
-      font-size: 1.2rem;
-    }
   }
 }

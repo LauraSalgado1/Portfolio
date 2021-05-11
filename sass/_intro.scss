@@ -46,9 +46,6 @@ section.intro {
   }
   p {
     font-size: 1.8rem;
-    @include breakpoint(xs) {
-      font-size: 1.6rem;
-    }
   }
 }
 

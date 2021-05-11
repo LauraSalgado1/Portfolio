@@ -16,8 +16,7 @@ section.contact {
       width: 100%;
       text-decoration-thickness: 2px;
     }
-    &:hover,
-    &:focus {
+    &:hover {
       text-decoration-color: $black;
       .black {
         opacity: 0;
